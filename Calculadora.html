@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <p>Insira o primeiro número: <input type="text" id="a"/></p>
+        <p>Insira o segundo número: <input type="text" id="b"/></p>
+        <button onclick="somar()">Somar (+)</button>
+        <button onclick="subtrair()">Subtrair (-)</button>
+        <button onclick="multiplicar()">Multiplicar (x)</button>
+        <button onclick="dividir()">Dividir (/)</button>
+        <p>Resultado: <input type="text" id="resultado" readonly/></p>  <!--ou desabled para o usuário não poder interagir-->
+
+        <script>
+            function somar(a, b){
+                var a = + document.getElementById('a').value; //para transformar o númro de string para numero
+                var b = Number(document.getElementById('b').value); //outra forma de transfomar texto em numero
+                document.getElementById('resultado');
+                resultado.value = a + b;
+            }
+            function subtrair(a, b){
+                var a = + document.getElementById('a').value; //para transformar o númro de string para numero
+                var b = Number(document.getElementById('b').value); //outra forma de transfomar texto em numero
+                document.getElementById('resultado');
+                resultado.value = a - b;
+            }
+            function multiplicar(a, b){
+                var a = + document.getElementById('a').value;
+                var b = Number(document.getElementById('b').value);
+                document.getElementById('resultado');
+                resultado.value = a * b;
+            }
+            function dividir(a, b){
+                var a = + document.getElementById('a').value;
+                var b = Number(document.getElementById('b').value);
+                document.getElementById('resultado');
+                resultado.value = a / b;
+            }
+    
+        </script>
+    </body>
+</html>
